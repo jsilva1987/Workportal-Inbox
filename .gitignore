@@ -1,0 +1,28 @@
+# OSX Files
+.DS_Store?
+ehthumbs.db
+Icon?
+Thumbs.db
+*.DS_Store
+
+# Xcode
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcuserstate
+*.pyc
+*.ipa
+*.xccheckout
+*.xcuserdatad
+*.xcscmblueprint
+project.xcworkspace/
+xcuserdata/
+build/
+Release/
+.idea/
+test-reports/
+ccn_results/
+coverage_results/
+test-reports/
+process_coverage_files.sh

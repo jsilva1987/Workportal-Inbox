@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Black.ttf">
+            <string>Lato-Black</string>
+        </array>
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="124" id="KGk-i7-Jjw" customClass="PendingTaskCell" customModule="Workportal_Inbox" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="124"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="123.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="employee" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XzE-9S-x2C">
+                        <rect key="frame" x="20" y="13" width="74" height="20"/>
+                        <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="requestedDays" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YSi-a4-Sg7">
+                        <rect key="frame" x="20" y="42" width="113" height="20"/>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="startDate-to-endDate" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDC-b6-1WQ">
+                        <rect key="frame" x="20" y="71" width="164.5" height="20"/>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c16-Tc-SFx">
+                        <rect key="frame" x="33" y="93" width="55" height="33"/>
+                        <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="17"/>
+                        <state key="normal" title="Accept">
+                            <color key="titleColor" red="0.83921568627450982" green="0.50196078431372548" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="acceptAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="SCh-Yj-fHj"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ym8-Ia-GCz">
+                        <rect key="frame" x="131" y="93" width="50" height="33"/>
+                        <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="17"/>
+                        <state key="normal" title="Reject">
+                            <color key="titleColor" red="0.83921568627450982" green="0.50196078431372548" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="rejectAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="SsK-l4-mW3"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qdC-yQ-dJm">
+                        <rect key="frame" x="280" y="13" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="FAq-xM-IIu"/>
+                            <constraint firstAttribute="height" constant="25" id="u8d-c0-5ya"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="XzE-9S-x2C" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="1di-Dn-RD0"/>
+                    <constraint firstItem="fDC-b6-1WQ" firstAttribute="leading" secondItem="XzE-9S-x2C" secondAttribute="leading" id="3Dg-IL-IgE"/>
+                    <constraint firstItem="c16-Tc-SFx" firstAttribute="leading" secondItem="fDC-b6-1WQ" secondAttribute="leading" constant="13" id="652-gC-sHe"/>
+                    <constraint firstItem="fDC-b6-1WQ" firstAttribute="top" secondItem="YSi-a4-Sg7" secondAttribute="bottom" constant="9" id="E3k-uD-gK2"/>
+                    <constraint firstItem="YSi-a4-Sg7" firstAttribute="top" secondItem="XzE-9S-x2C" secondAttribute="bottom" constant="9" id="GuB-dk-hRu"/>
+                    <constraint firstItem="XzE-9S-x2C" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="H4Y-uq-sXi"/>
+                    <constraint firstItem="qdC-yQ-dJm" firstAttribute="top" secondItem="XzE-9S-x2C" secondAttribute="top" id="RV7-Gk-dnw"/>
+                    <constraint firstItem="YSi-a4-Sg7" firstAttribute="leading" secondItem="XzE-9S-x2C" secondAttribute="leading" id="RuE-NH-KwO"/>
+                    <constraint firstItem="c16-Tc-SFx" firstAttribute="top" secondItem="fDC-b6-1WQ" secondAttribute="bottom" constant="2" id="XgK-jC-umq"/>
+                    <constraint firstItem="ym8-Ia-GCz" firstAttribute="leading" secondItem="c16-Tc-SFx" secondAttribute="trailing" constant="43" id="h37-Vf-hRR"/>
+                    <constraint firstAttribute="trailing" secondItem="qdC-yQ-dJm" secondAttribute="trailing" constant="15" id="mWt-af-qqT"/>
+                    <constraint firstItem="ym8-Ia-GCz" firstAttribute="centerY" secondItem="c16-Tc-SFx" secondAttribute="centerY" id="rev-zu-6GC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="acceptButton" destination="c16-Tc-SFx" id="fIe-e4-M8v"/>
+                <outlet property="employeeLabel" destination="XzE-9S-x2C" id="2jP-4R-Vqr"/>
+                <outlet property="iconImageView" destination="qdC-yQ-dJm" id="tey-cd-C5C"/>
+                <outlet property="rejectButton" destination="ym8-Ia-GCz" id="GiV-Ju-IBj"/>
+                <outlet property="requestedDaysLabel" destination="YSi-a4-Sg7" id="jSv-LM-n7C"/>
+                <outlet property="startToEndDateLabel" destination="fDC-b6-1WQ" id="ycx-Wh-ovT"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="94"/>
+        </tableViewCell>
+    </objects>
+</document>
