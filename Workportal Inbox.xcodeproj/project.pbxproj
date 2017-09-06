@@ -23,8 +23,8 @@
 		0F2F65B21F57A5FF00724731 /* InboxTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2F65B11F57A5FF00724731 /* InboxTableViewController.swift */; };
 		0F2F65B81F57AD7500724731 /* PendingTaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2F65B61F57AD7500724731 /* PendingTaskCell.swift */; };
 		0F2F65B91F57AD7500724731 /* PendingTaskCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F2F65B71F57AD7500724731 /* PendingTaskCell.xib */; };
-		0F3FA0061F5FA61300875307 /* RequestManagerMockDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3FA0051F5FA61300875307 /* RequestManagerMockDelegate.swift */; };
 		0F3FA00A1F5FAACE00875307 /* RequestManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3FA0091F5FAACE00875307 /* RequestManagerTests.swift */; };
+		0F3FA00C1F5FACF500875307 /* RequestManagerMockDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3FA00B1F5FACF500875307 /* RequestManagerMockDelegate.swift */; };
 		0F637E311F5648B400E57780 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F637E301F5648B400E57780 /* AppDelegate.swift */; };
 		0F637E361F5648B400E57780 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F637E341F5648B400E57780 /* Main.storyboard */; };
 		0F637E381F5648B400E57780 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F637E371F5648B400E57780 /* Assets.xcassets */; };
@@ -69,8 +69,8 @@
 		0F2F65B11F57A5FF00724731 /* InboxTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InboxTableViewController.swift; sourceTree = "<group>"; };
 		0F2F65B61F57AD7500724731 /* PendingTaskCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PendingTaskCell.swift; sourceTree = "<group>"; };
 		0F2F65B71F57AD7500724731 /* PendingTaskCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PendingTaskCell.xib; sourceTree = "<group>"; };
-		0F3FA0051F5FA61300875307 /* RequestManagerMockDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequestManagerMockDelegate.swift; path = ../Models/RequestManagerMockDelegate.swift; sourceTree = "<group>"; };
 		0F3FA0091F5FAACE00875307 /* RequestManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestManagerTests.swift; sourceTree = "<group>"; };
+		0F3FA00B1F5FACF500875307 /* RequestManagerMockDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestManagerMockDelegate.swift; sourceTree = "<group>"; };
 		0F637E2D1F5648B400E57780 /* Workportal Inbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Workportal Inbox.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F637E301F5648B400E57780 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F637E351F5648B400E57780 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -178,7 +178,7 @@
 		0F3FA0071F5FAA7F00875307 /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
-				0F3FA0051F5FA61300875307 /* RequestManagerMockDelegate.swift */,
+				0F3FA00B1F5FACF500875307 /* RequestManagerMockDelegate.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -410,7 +410,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F3FA0061F5FA61300875307 /* RequestManagerMockDelegate.swift in Sources */,
+				0F3FA00C1F5FACF500875307 /* RequestManagerMockDelegate.swift in Sources */,
 				0F637E531F56517300E57780 /* PendingTaskTests.swift in Sources */,
 				0F3FA00A1F5FAACE00875307 /* RequestManagerTests.swift in Sources */,
 			);
