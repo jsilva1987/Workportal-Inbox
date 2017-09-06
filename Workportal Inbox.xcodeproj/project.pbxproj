@@ -23,6 +23,8 @@
 		0F2F65B21F57A5FF00724731 /* InboxTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2F65B11F57A5FF00724731 /* InboxTableViewController.swift */; };
 		0F2F65B81F57AD7500724731 /* PendingTaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2F65B61F57AD7500724731 /* PendingTaskCell.swift */; };
 		0F2F65B91F57AD7500724731 /* PendingTaskCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F2F65B71F57AD7500724731 /* PendingTaskCell.xib */; };
+		0F3FA0061F5FA61300875307 /* RequestManagerMockDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3FA0051F5FA61300875307 /* RequestManagerMockDelegate.swift */; };
+		0F3FA00A1F5FAACE00875307 /* RequestManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3FA0091F5FAACE00875307 /* RequestManagerTests.swift */; };
 		0F637E311F5648B400E57780 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F637E301F5648B400E57780 /* AppDelegate.swift */; };
 		0F637E361F5648B400E57780 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F637E341F5648B400E57780 /* Main.storyboard */; };
 		0F637E381F5648B400E57780 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F637E371F5648B400E57780 /* Assets.xcassets */; };
@@ -30,6 +32,7 @@
 		0F637E531F56517300E57780 /* PendingTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F637E521F56517300E57780 /* PendingTaskTests.swift */; };
 		0F637E561F56532800E57780 /* PendingTaskMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F637E551F56532800E57780 /* PendingTaskMocks.swift */; };
 		0F637E591F56538400E57780 /* PendingTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F637E581F56538400E57780 /* PendingTask.swift */; };
+		0F80CB201F5F7E640036C0D9 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F80CB1F1F5F7E640036C0D9 /* RequestManager.swift */; };
 		0FBFA3651F5C633D00A0FF3D /* icon_accept.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FBFA3611F5C633D00A0FF3D /* icon_accept.png */; };
 		0FBFA3661F5C633D00A0FF3D /* icon_bizagi_green.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FBFA3621F5C633D00A0FF3D /* icon_bizagi_green.png */; };
 		0FBFA3671F5C633D00A0FF3D /* icon_bizagi_orange.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FBFA3631F5C633D00A0FF3D /* icon_bizagi_orange.png */; };
@@ -66,6 +69,8 @@
 		0F2F65B11F57A5FF00724731 /* InboxTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InboxTableViewController.swift; sourceTree = "<group>"; };
 		0F2F65B61F57AD7500724731 /* PendingTaskCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PendingTaskCell.swift; sourceTree = "<group>"; };
 		0F2F65B71F57AD7500724731 /* PendingTaskCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PendingTaskCell.xib; sourceTree = "<group>"; };
+		0F3FA0051F5FA61300875307 /* RequestManagerMockDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequestManagerMockDelegate.swift; path = ../Models/RequestManagerMockDelegate.swift; sourceTree = "<group>"; };
+		0F3FA0091F5FAACE00875307 /* RequestManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestManagerTests.swift; sourceTree = "<group>"; };
 		0F637E2D1F5648B400E57780 /* Workportal Inbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Workportal Inbox.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F637E301F5648B400E57780 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F637E351F5648B400E57780 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -77,6 +82,7 @@
 		0F637E521F56517300E57780 /* PendingTaskTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PendingTaskTests.swift; sourceTree = "<group>"; };
 		0F637E551F56532800E57780 /* PendingTaskMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PendingTaskMocks.swift; sourceTree = "<group>"; };
 		0F637E581F56538400E57780 /* PendingTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PendingTask.swift; sourceTree = "<group>"; };
+		0F80CB1F1F5F7E640036C0D9 /* RequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
 		0FBFA3611F5C633D00A0FF3D /* icon_accept.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_accept.png; sourceTree = "<group>"; };
 		0FBFA3621F5C633D00A0FF3D /* icon_bizagi_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_bizagi_green.png; sourceTree = "<group>"; };
 		0FBFA3631F5C633D00A0FF3D /* icon_bizagi_orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_bizagi_orange.png; sourceTree = "<group>"; };
@@ -169,6 +175,22 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		0F3FA0071F5FAA7F00875307 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				0F3FA0051F5FA61300875307 /* RequestManagerMockDelegate.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		0F3FA0081F5FAAB100875307 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0F3FA0091F5FAACE00875307 /* RequestManagerTests.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		0F637E241F5648B400E57780 = {
 			isa = PBXGroup;
 			children = (
@@ -208,6 +230,8 @@
 		0F637E441F5648B400E57780 /* Workportal InboxTests */ = {
 			isa = PBXGroup;
 			children = (
+				0F3FA0081F5FAAB100875307 /* Utils */,
+				0F3FA0071F5FAA7F00875307 /* Mocks */,
 				0F637E511F56514000E57780 /* Models */,
 				0F637E471F5648B400E57780 /* Info.plist */,
 			);
@@ -244,6 +268,7 @@
 				0F0ABA671F5B851E0024A5A7 /* DateFormatterExtensions.swift */,
 				0F0ABA821F5BA2F00024A5A7 /* UIColorExtensions.swift */,
 				0FBFA36D1F5C706000A0FF3D /* IconsEnum.swift */,
+				0F80CB1F1F5F7E640036C0D9 /* RequestManager.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -370,6 +395,7 @@
 			files = (
 				0FBFA36E1F5C706000A0FF3D /* IconsEnum.swift in Sources */,
 				0F0ABA831F5BA2F00024A5A7 /* UIColorExtensions.swift in Sources */,
+				0F80CB201F5F7E640036C0D9 /* RequestManager.swift in Sources */,
 				0F637E591F56538400E57780 /* PendingTask.swift in Sources */,
 				0F0ABA681F5B851E0024A5A7 /* DateFormatterExtensions.swift in Sources */,
 				0F637E311F5648B400E57780 /* AppDelegate.swift in Sources */,
@@ -384,7 +410,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F3FA0061F5FA61300875307 /* RequestManagerMockDelegate.swift in Sources */,
 				0F637E531F56517300E57780 /* PendingTaskTests.swift in Sources */,
+				0F3FA00A1F5FAACE00875307 /* RequestManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -22,7 +22,6 @@ class PendingTaskTests: XCTestCase {
         super.tearDown()
     }
     
-    
     func testPendingTaskModel() {
         let pendingTask = PendingTaskMocks.taskOne
         XCTAssertNotNil(pendingTask)

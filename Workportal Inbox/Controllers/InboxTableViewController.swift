@@ -23,15 +23,21 @@ class InboxTableViewController: UITableViewController {
         
         tableView.register(PendingTaskCell.nib(), forCellReuseIdentifier: PendingTaskCell.identifier())
 
-        pendingTasks = [PendingTaskMocks.taskOne,
-                        PendingTaskMocks.taskTwo,
-                        PendingTaskMocks.taskThree,
-                        PendingTaskMocks.taskFour,
-                        PendingTaskMocks.taskFive]
-        
-        inboxTableView.reloadData()
+        let requestManager = RequestManager(delegate: self)
+        requestManager.requestPendingTasks()
     }
     
+}
+
+// MARK: - Request Manager Delegate 
+
+extension InboxTableViewController: RequestManagerDelegate {
+    func pendingTasksRequestDidComplete(_ responseTasks: [PendingTask]) {
+        pendingTasks = responseTasks
+        DispatchQueue.main.async { [weak self] in
+            self?.inboxTableView.reloadData()
+        }
+    }
 }
 
 // MARK: - Table view data source

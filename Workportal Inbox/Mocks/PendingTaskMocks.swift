@@ -10,6 +10,14 @@ import Foundation
 
 class PendingTaskMocks : NSObject {
     
+    static var tasksArray: [PendingTask] {
+        return [PendingTaskMocks.taskOne,
+                PendingTaskMocks.taskTwo,
+                PendingTaskMocks.taskThree,
+                PendingTaskMocks.taskFour,
+                PendingTaskMocks.taskFive]
+    }
+    
     static var taskOne: PendingTask {
         get {
             let mockResponse: [String: Any] = ["processId": 1,
